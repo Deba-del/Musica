@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musica</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://lh3.googleusercontent.com/OTokibnOFdPvMlRRN4Fhq9jZLoJgiFZbbLAmsqYcQui2BtdFTgOoY4fxQvPGMFpAhKfepl6UQXR-o6CRpkHGRjv8bFXyI1JwlwgcDFtisvYPAeSUKv49QAogLIn_pgCNapzM5doBkHzmVt4UOkyArlzaLn_gVcyQZrVwMrfG_0T6e6VeDbz-BdcksTPmeItWuUpPx5vgHnKYWEJYIBT2C3bTARMUbaLAPYqlG-ZyOF6MNyU5iXwlBO3kydhnC35wv6dClL6I4-ue2PidgINdSidGuj6Nw1oRc46EJ3Q71ZtzWj-LKa160R6jOxTki7FgsGeU1VuMIpsCtMcmjvw3hi3Py3xEASogGIKHbN7eO3-TYMsKc3ktlZr34qDM9O_5umJOX0H16Efx4ajfO7tfOSpm3usJRE2gZxYwdBnynYCoGX67MOFJ8CWq4MCKXAC55Nai985r7WEY0pE6E41d6iAkjOuXF2-1tGTsq8EqQCAWvzkeFYpwtTS5XDZR95P32xwDPaxtK3qHrJVm0dn-8jaH7zzDCX_lSgRGrADWnhPBJ0Ynye_2ShzyXrAkBWMwSislcOt3LPuTvxKZno5L_33Qi_xt3tFFha-GcRUKYJfGkgotntGRZCYmz7cHRkXztlX_QfAbYO9RLOkPdxN4QmE329fYkoX1LgPBzV4bCotu2Sa6zlgxjJjIIBY08fAIOw2uxAc3tOodKMjadnnvJiU4ln2_cjOi5lVeD55GrA3ymL35jttzip-VFnjDq_DBiSiTXECrGchyA2XfymGqggIrXEYlzkeUyC_zlkYMW46vgluR0ov0yjP6_nKsV3ukz4v5tBqxzu2V44XbYSaqux8T0kIsIT3tUonzPusmm_zw0froJVeJB8Q4zvnU9XfON8P6ySUmmIbnQ2C-a7IOKp5xwQPCh5SILJFBC8mGeGhgZYHJ=s32-no?authuser=0"
+    />
+    <script
+      src="https://kit.fontawesome.com/7993f8c6f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-dark">
+    <!-- Header Nav  -->
+    <header class="sticky-top">
+      <nav class="bg-dark nav-logo">
+        <a href="index.html">
+          <div class="weblogo">
+            <img
+              class="logo"
+              src="https://lh3.googleusercontent.com/VLaptGG-xV1kxhJkQxuSHTclW6xPzrdDi6WJbEGAEVHjEmRZmAaONJio3V1sAQ4HzMp-cE3GU_NobvDMo1uGQHJjfzRkTBnd2KNRPWNcZiR7QyApfB3HTR1-JlVZ119GHHhpnXIfXjudQsTLXLkfTKczGW4E96GRUADte7jZ2H64YIQzUB4JpAb4L6Rm8QV2chDQwnbF8G9Xmf3DLUpXyYsg0qvwStyqU212MAAbk-PEUJnnSiJIzkTykL7F6CaOdsz7ERUgiTeEF3rth8HkysbnUONrAynjCNvzr8d0pdI3ES7HdAZ72HOMzuFM_7mgCgYTblq0PbQxsoCyWPfvQm8lJjpivm9c03oYx-hK3X1I2G1izZVCZ098Rxc2VjQHv88v30nqb2lp5-keV_wc_UyXlKW-NUDY4DqyTcwnU9qP-N3GTcOBeJ6Fp7C2HJy5nGa7OQqivrdSTiB_de36jjUw8TwlNIbKO-ZMKXmEySBxRRO9GGdyH0K2AJlTnvdp9lxcJfKogA4LfbzL3fGVwGWnpzqGgSLcD0Q_m0nRDpc-E2lJQF-BEn7XKeuSmKcJ2hCuGLkmMaPqeeEBpmB-pmqGK1rSKIC6If_Zfp23l7BoAOTkV4YNRg0omKkU_s4BnuVd3fjQc5zprxUAw3zgUmiausBSD6SmioD9KGfpiccchgoEQp3_ANXS8V8yTNHHr5FX6Rk9L1_Tg3dRBdpMIQ0ctA2fIZaQBLYYom7sfOtCyKIApdQxaazUHqs0WNBIpFOa1SvEYn0zKHWeJ943KZmZHajDoYTaLN1XsVeAMVvoXR5EPJ7j3hsoEixScbNr38X6KP8HnpATWM5akO7y7_CFX8-ULa_gp1RuFHpjk5J9thwgqLx7rJhenEPm1RWQcYIwkJqAnk6e_xFHqJp53yFA5MRA97UJ1EywBS5cPwP9Ch4T=s500-no?authuser=0"
+              alt="logo"
+            />
+            <span>Musica</span>
+          </div>
+        </a>
+
+        <div class="navlist">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#popularArtist">Explore</a></li>
+            <li><a href="#">Library</a></li>
+          </ul>
+        </div>
+
+        <div class="navform">
+          <div class="searchContainer">
+            <table class="searchBox">
+              <tr>
+                <td>
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="voice search"
+                  >
+                    <i class="fa-solid fa-microphone colorWhite"></i>
+                  </a>
+                </td>
+                <td>
+                  <input
+                    class="search"
+                    type="text"
+                    name="search"
+                    placeholder="Search..."
+                  />
+                </td>
+                <td>
+                  <a href="#" type="submit">
+                    <i class="fa-solid fa-magnifying-glass colorWhite"></i>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <span
+            class="tt"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="notifications"
+          >
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+          </span>
+
+          <span class="pfp">
+            <a href="#">
+              <img
+                src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="profile image"
+              />
+            </a>
+          </span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Body -->
+    <main>
+      <!-- carousel -->
+      <div class="container">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="imgContainer"
+                    ><img
+                      src="https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      class="img-fluid img"
+                      alt="..."
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="#" class="imgContainer"
+                    ><img
+                      src="https://images.pexels.com/photos/46244/girl-portrait-carnival-retro-46244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      class="img-fluid img"
+                      alt="..."
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="#" class="imgContainer"
+                    ><img
+                      src="https://images.pexels.com/photos/860707/pexels-photo-860707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      class="img-fluid img"
+                      alt="..."
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="imgContainer"
+                    ><img
+                      src="https://images.pexels.com/photos/111287/pexels-photo-111287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      class="img-fluid img"
+                      alt="..."
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="#" class="imgContainer"
+                    ><img
+                      src="https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      class="img-fluid img"
+                      alt="..."
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="#" class="imgContainer"
+                    ><img
+                      src="https://images.pexels.com/photos/114820/pexels-photo-114820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      class="img-fluid img"
+                      alt="..."
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Popular Song -->
+        <div class="popularCategory">
+          <p class="section-heading">Popular Songs</p>
+          <div class="popularList">
+            <div class="popularSong">
+              <a href="#player-controls" class="aboutSong">
+                <img
+                  src="https://images.pexels.com/photos/1323206/pexels-photo-1323206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                />
+              </a>
+              <span class="songInfo">
+                <span>Genius(ft. Labrinth, Sia &Diplo)</span><br />
+                <span>LSD.Genius.2018</span>
+              </span>
+              <span class="songTime">
+                <div><i class="fa-solid fa-ellipsis"></i></div>
+                <span>3:34</span>
+              </span>
+            </div>
+
+            <div class="popularSong">
+              <a href="#player-controls" class="aboutSong">
+                <img
+                  src="https://images.pexels.com/photos/1323206/pexels-photo-1323206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                />
+              </a>
+              <span class="songInfo">
+                <span>Mountains(ft. Labrinth, Sia &Diplo)</span><br />
+                <span>LSD.Genius.2018</span>
+              </span>
+              <span class="songTime">
+                <div><i class="fa-solid fa-ellipsis"></i></div>
+                <span>3:15</span>
+              </span>
+            </div>
+
+            <div class="popularSong">
+              <a href="#player-controls" class="aboutSong">
+                <img
+                  src="https://images.pexels.com/photos/1323206/pexels-photo-1323206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                />
+              </a>
+              <span class="songInfo">
+                <span>It's Time(ft. Labrinth, Sia &Diplo)</span><br />
+                <span>LSD.Genius.2018</span>
+              </span>
+              <span class="songTime">
+                <div><i class="fa-solid fa-ellipsis"></i></div>
+                <span>3:30</span>
+              </span>
+            </div>
+
+            <div class="popularSong">
+              <a href="#player-controls" class="aboutSong">
+                <img
+                  src="https://images.pexels.com/photos/1323206/pexels-photo-1323206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                />
+              </a>
+              <span class="songInfo">
+                <span>Audio(ft. Labrinth, Sia &Diplo)</span><br />
+                <span>LSD.Genius.2018</span>
+              </span>
+              <span class="songTime">
+                <div><i class="fa-solid fa-ellipsis"></i></div>
+                <span>3:24</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Artist -->
+        <div class="popularArtists" id="popularArtist">
+          <p class="section-heading">Popular Artists</p>
+          <div class="artistInfo">
+            <a href="coldplay.html" class="artistLink">
+              <div class="artistContainer">
+                <div class="artistImg">
+                  <img
+                    src="https://i1.sndcdn.com/avatars-000237271265-7hhnty-t500x500.jpg"
+                    alt="coldplay"
+                  />
+                </div>
+                <p>Coldplay</p>
+              </div>
+            </a>
+
+            <a href="coldplay.html" class="artistLink">
+              <div class="artistContainer">
+                <div class="artistImg">
+                  <img
+                    src="https://imageio.forbes.com/blogs-images/brittanyhodak/files/2017/08/20988198_10154975234150369_1493436770276743217_o-1200x1200.jpg?format=jpg&width=1200"
+                    alt="Taylor Swift"
+                  />
+                </div>
+                <p>Taylor Swift</p>
+              </div>
+            </a>
+
+            <a href="coldplay.html" class="artistLink">
+              <div class="artistContainer">
+                <div class="artistImg">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/3/3f/Ed_Sheeran_%2B_cover.png"
+                    alt="Ed Sheeran"
+                  />
+                </div>
+                <p>Ed Sheeran</p>
+              </div>
+            </a>
+
+            <a href="coldplay.html" class="artistLink">
+              <div class="artistContainer">
+                <div class="artistImg">
+                  <img
+                    src="https://i.pinimg.com/originals/cc/a0/4d/cca04d86d3775292c232ed59af1923f2.jpg"
+                    alt="Sia"
+                  />
+                </div>
+                <p>Sia</p>
+              </div>
+            </a>
+
+            <a href="coldplay.html" class="artistLink">
+              <div class="artistContainer">
+                <div class="artistImg">
+                  <img
+                    src="https://media.pitchfork.com/photos/5acfc114cae28410a11144df/1:1/w_600/Marshall%20Mathers%20LP.jpg"
+                    alt="Eminem"
+                  />
+                </div>
+                <p>Eminem</p>
+              </div>
+            </a>
+
+            <a href="coldplay.html" class="artistLink">
+              <div class="artistContainer">
+                <div class="artistImg">
+                  <img
+                    src="https://i.insider.com/5ebe1d9cf34d053e62636ee5?width=1000&format=jpeg&auto=webp"
+                    alt="Ariana Grande"
+                  />
+                </div>
+                <p>Ariana Grande</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Stations -->
+        <div class="stations">
+          <div class="genre">
+            <a href="coldplay.html">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/000/251/764/small/cozy-at-the-beach-cliff.jpg"
+                alt="chill"
+              />
+              <div class="subject">
+                <p>Chill</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="genre">
+            <a href="coldplay.html">
+              <img
+                src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9jayUyMG11c2ljfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                alt="rock"
+              />
+              <div class="subject">
+                <p>Rock</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="genre">
+            <a href="coldplay.html">
+              <img
+                src="https://images.theconversation.com/files/122137/original/image-20160511-18171-kulas4.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip"
+                alt="love"
+              />
+              <div class="subject">
+                <p>Love</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="genre">
+            <a href="coldplay.html">
+              <img
+                src="https://nationaltoday.com/wp-content/uploads/2021/10/Pop-Music-Chart-Day.jpg"
+                alt="pop"
+              />
+              <div class="subject">
+                <p>Pop</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="genre">
+            <a href="coldplay.html">
+              <img
+                src="http://www.moojic.com/moojic/images/blog/full/515.jpg"
+                alt="edm"
+              />
+              <div class="subject">
+                <p>Edm</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="genre">
+            <a href="coldplay.html">
+              <img
+                src="https://images.cdn4.stockunlimited.net/preview1300/retro-music-party-poster_1993518.jpg"
+                alt="retro"
+              />
+              <div class="subject">
+                <p>retro</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- categories -->
+        <div class="category-container">
+          <div class="category-box">
+            <a href="coldplay.html">
+              <img
+                src="https://images.pexels.com/photos/2078071/pexels-photo-2078071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="party"
+              />
+              <div class="subject">
+                <p>Party</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-box">
+            <a href="coldplay.html">
+              <img
+                src="https://images.pexels.com/photos/1443657/pexels-photo-1443657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="road trip"
+              />
+              <div class="subject">
+                <p>Road Trip</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-box">
+            <a href="coldplay.html">
+              <img
+                src="https://images.pexels.com/photos/2253569/pexels-photo-2253569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="classical"
+              />
+              <div class="subject">
+                <p>Classical</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Latest songs -->
+        <div class="latest-container">
+          <div class="latest-header">
+            <p class="section-heading">Latest English</p>
+
+            <div class="dropdown">
+              <a href="#" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-ellipsis"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">more</a></li>
+                <li><a class="dropdown-item" href="#">remove</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="latest-body">
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/5/5c/Enemy_Imagine_Dragons.jpg"
+                  alt="imagine-dragons enemy"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Enemy</span> <br />
+                <span>Imagine Dragons</span>
+              </div>
+            </div>
+
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/5/5c/Enemy_Imagine_Dragons.jpg"
+                  alt="imagine-dragons shark"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Shark</span> <br />
+                <span>Imagine Dragons</span>
+              </div>
+            </div>
+
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/b/bb/Imagine_Dragons_Bones_cover.jpg"
+                  alt="imagine-dragons bones"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Bones</span> <br />
+                <span>Imagine Dragons</span>
+              </div>
+            </div>
+
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/b/b5/ImagineDragonsEvolve.jpg"
+                  alt="imagine-dragons believer"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Believer</span> <br />
+                <span>Imagine Dragons</span>
+              </div>
+            </div>
+
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/9/95/Origins_cover.png"
+                  alt="imagine-dragons natural"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Natural</span> <br />
+                <span>Imagine Dragons</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="latest-container">
+          <div class="latest-header">
+            <p class="section-heading">Latest Hindi</p>
+
+            <div class="dropdown">
+              <a href="#" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-ellipsis"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">more</a></li>
+                <li><a class="dropdown-item" href="#">remove</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="latest-body">
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b27390649206bfac238d5f094185"
+                  alt="A.R. Rahman Ponge Nadhi"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Ponge Nadhi</span> <br />
+                <span>A.R. Rahman</span>
+              </div>
+            </div>
+
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://c.saavncdn.com/969/A-R-Rahman-Melodious-Hits-Tamil-2020-20201015151050-500x500.jpg"
+                  alt="A.R. Rahman Roja"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Roja</span> <br />
+                <span>A.R. Rahman</span>
+              </div>
+            </div>
+
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://i.scdn.co/image/ab67616d00001e02f7df963fac58d27506d8a391"
+                  alt="A.R. Rahman Maa Tujhe Salam"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Maa Tujhe Salaam</span> <br />
+                <span>A.R. Rahman</span>
+              </div>
+            </div>
+
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b27390649206bfac238d5f094185"
+                  alt="A.R. Rahman param sundari"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Param Sundari</span> <br />
+                <span>A.R. Rahman</span>
+              </div>
+            </div>
+
+            <div class="song-link">
+              <div class="latest-song">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273db26304d7f4946d43ca6860c"
+                  alt="A.R. Rahman Rait Zara si"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-regular fa-circle-play"></i>
+                </a>
+              </div>
+
+              <div class="latest-songInfo">
+                <span>Rait Zara Si</span> <br />
+                <span>A.R. Rahman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Aside -->
+    <aside>
+      <div class="queue-container">
+        <div class="queue-head sticky-top bg-dark">
+          <p class="section-heading">Queue</p>
+
+          <div class="dropdown">
+            <a href="#" data-bs-toggle="dropdown">
+              Queue &nbsp; <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">favourites</a></li>
+              <li><a class="dropdown-item" href="#">playlists</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="queue-body">
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>01</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#player-controls" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Kaya Village</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>02</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#player-controls" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Daydreaming</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>03</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#player-controls" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Vision</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>04</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#player-controls" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>The Seeker</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>05</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Sacred Tree</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>06</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#player-controls" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>The Prophecy Unfolds</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>07</p>
+              <div class="queue-img">
+                <img
+                  src="https://images.genius.com/d95b82b98366dd534c1cb8755bdff68f.1000x1000x1.jpg"
+                  alt="Aurora cure for me"
+                />
+                <a href="#player-controls" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Cure For Me</span><br /><span>Aurora</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>08</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b27377480caebf207b9f99516d7a"
+                  alt="Tenno"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Spirit of Life</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>09</p>
+              <div class="queue-img">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/c/c9/I_am_%28G%29I-DLE_album.jpg"
+                  alt="g-idle"
+                />
+                <a href="#player-controls" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Oh My God</span><br /><span>(G)I-DLE</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>10</p>
+              <div class="queue-img">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/c/c9/I_am_%28G%29I-DLE_album.jpg"
+                  alt="g-idle"
+                />
+                <a href="#player-controls" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>사랑해 Luv U</span><br /><span>(G)I-DLE</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>11</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Kaya Village</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>12</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Daydreaming</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>13</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Vision</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>14</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>The Seeker</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>15</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Sacred Tree</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>16</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2733564d6fb8199dfb2ca1573d6"
+                  alt="Tenno"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>The Prophecy Unfolds</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>17</p>
+              <div class="queue-img">
+                <img
+                  src="https://images.genius.com/d95b82b98366dd534c1cb8755bdff68f.1000x1000x1.jpg"
+                  alt="Aurora cure for me"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Cure For Me</span><br /><span>Aurora</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>18</p>
+              <div class="queue-img">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b27377480caebf207b9f99516d7a"
+                  alt="Tenno"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Spirit of Life</span><br /><span>Tenno</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>19</p>
+              <div class="queue-img">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/c/c9/I_am_%28G%29I-DLE_album.jpg"
+                  alt="g-idle"
+                />
+                <a href="#" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>Oh My God</span><br /><span>(G)I-DLE</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+          <div class="queue-cell">
+            <div class="queue-item">
+              <p>20</p>
+              <div class="queue-img">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/c/c9/I_am_%28G%29I-DLE_album.jpg"
+                  alt="g-idle"
+                />
+                <a href="#player-controls" class="playbutton">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <p class="queue-title">
+                <span>사랑해 Luv U</span><br /><span>(G)I-DLE</span>
+              </p>
+            </div>
+
+            <a href="#" class="like">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- bottom player -->
+    <div class="bottom-player bg-dark" id="player-controls">
+      <div class="player">
+        <div class="player-ctrl">
+          <div class="play">
+            <a href="#" class="play-step"
+              ><i class="fa-solid fa-backward-step"></i
+            ></a>
+            <a href="#" class="pause">
+              <i class="fa-solid fa-pause"></i>
+            </a>
+            <a href="#" class="play-step"
+              ><i class="fa-solid fa-forward-step"></i
+            ></a>
+            <a href="#" class="playtime">00:00 / 03:00</a>
+          </div>
+        </div>
+
+        <div class="player-info">
+          <div class="play-img">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/c/c9/I_am_%28G%29I-DLE_album.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="play-name">
+            <p>사랑해 Luv U</p>
+            <p>(G)I-DLE 2020</p>
+          </div>
+
+          <div class="like-dislike">
+            <a href="#"><i class="fa-regular fa-thumbs-down"></i></a>
+            <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+          </div>
+
+          <div class="play-menu">
+            <div class="dropdown">
+              <a href="#" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-regular fa-thumbs-up"></i> Add to liked
+                    songs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-trash"></i> Remove from queue</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="player-settings">
+          <a href="#">
+            <i class="fa-solid fa-volume-high"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-repeat"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-shuffle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>
